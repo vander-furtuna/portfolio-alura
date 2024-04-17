@@ -23,15 +23,6 @@ export const ContactContent = styled.div`
   width: 100%;
 `
 
-export const ContactForm = styled.form`
-  display: flex;
-  gap: 1rem;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-`
-
 export const ContactImg = styled.img`
   width: 29rem;
   height: auto;
@@ -39,11 +30,4 @@ export const ContactImg = styled.img`
   @media screen and (max-width: 850px) {
     display: none;
   }
-`
-
-export const InformationContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  color: ${({ theme }) => theme.gray[100]};
 `

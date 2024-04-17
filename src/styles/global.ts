@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
 *  {
-  padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
@@ -17,25 +16,25 @@ html, body {
 }
 
   /* width */
-  ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: ${({ theme }) => theme.background.bold};
+  background: ${({ theme }) => theme.gray[900]};
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: ${({ theme }) => theme.background.primary.normal};
+  background: ${({ theme }) => theme.primary[300]};
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: ${({ theme }) => theme.background.primary.light};
+  background: ${({ theme }) => theme.primary[500]};
 }
 
 `
